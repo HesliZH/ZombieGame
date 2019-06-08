@@ -11,6 +11,7 @@
     <saved-with-version>26500</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
@@ -44,103 +45,118 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="FUndo" sid="777996443045464">
-            <plugin id="TiledBg" />
-            <texture original-source="C:\Projetos\ZombieGame\Sprites\Fundo.png" />
-        </object-type>
-        <object-type name="Torre" sid="465091437293953">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="189314629254967">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842810360887344" speed="5">
-                    <frame duration="1" hotspotX="0.518072" hotspotY="0.429825" original-source="C:\Projetos\ZombieGame\Sprites\Torre.png">
-                        <collision-poly>
-                            <point x="0.0120482" y="0" />
-                            <point x="0.518072" y="0.0175439" />
-                            <point x="0.975904" y="0.0175439" />
-                            <point x="0.915663" y="0.429825" />
-                            <point x="0.963855" y="0.991228" />
-                            <point x="0.518072" y="0.991228" />
-                            <point x="0" y="0.991228" />
-                            <point x="0.0722892" y="0.429825" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Terra" sid="115774320416265">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822858721533440" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Terra2" sid="747925245282681">
-            <plugin id="TiledBg" />
-            <behaviors>
-                <behavior-type name="Solid" sid="190318079018520">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
-            <texture original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
-        </object-type>
-        <object-type name="Esqueleto" sid="565671615770220">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Platform" sid="955527194914669">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="13" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="894385687703644" speed="5">
-                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.545455" hotspotY="0.514286" />
-                    <frame duration="1" hotspotX="0.521739" hotspotY="0.514286" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" />
-                </animation>
-                <animation framecount="18" loop="1" name="Atacando" pingpong="0" repeatcount="1" repeatto="0" sid="878473145250988" speed="5">
-                    <frame duration="1" hotspotX="0.833333" hotspotY="0.441176" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
-                </animation>
-            </animation-folder>
-        </object-type>
+        <object-folder name="Sprites">
+            <object-type name="Esqueleto" sid="565671615770220">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Platform" sid="955527194914669">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="13" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="894385687703644" speed="5">
+                        <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.545455" hotspotY="0.514286" />
+                        <frame duration="1" hotspotX="0.521739" hotspotY="0.514286" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.514286" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.526316" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="18" loop="1" name="Atacando" pingpong="0" repeatcount="200" repeatto="0" sid="878473145250988" speed="5">
+                        <frame duration="1" hotspotX="0.833333" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.833333" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.869565" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.857143" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.95" hotspotY="0.512821" />
+                        <frame duration="1" hotspotX="0.956522" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.958333" hotspotY="0.457143" />
+                        <frame duration="1" hotspotX="0.47619" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.393939" hotspotY="0.0952381" />
+                        <frame duration="1" hotspotX="0.441176" hotspotY="0.173913" />
+                        <frame duration="1" hotspotX="0.441176" hotspotY="0.208333" />
+                        <frame duration="1" hotspotX="0.411765" hotspotY="0.208333" />
+                        <frame duration="1" hotspotX="0.4" hotspotY="0.208333" />
+                        <frame duration="1" hotspotX="0.470588" hotspotY="0.208333" />
+                        <frame duration="1" hotspotX="0.586207" hotspotY="0.40625" />
+                        <frame duration="1" hotspotX="0.913043" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.869565" hotspotY="0.441176" />
+                        <frame duration="1" hotspotX="0.833333" hotspotY="0.441176" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="FUndo" sid="777996443045464">
+                <plugin id="TiledBg" />
+                <texture original-source="C:\Projetos\ZombieGame\Sprites\Fundo.png" />
+            </object-type>
+            <object-type name="Terra" sid="115774320416265">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822858721533440" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Terra2" sid="747925245282681">
+                <plugin id="TiledBg" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="190318079018520">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <texture original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
+            </object-type>
+            <object-type name="Torre" sid="465091437293953">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="189314629254967">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842810360887344" speed="5">
+                        <frame duration="1" hotspotX="0.523077" hotspotY="0.432432" original-source="C:\Projetos\ZombieGame\Sprites\the castle of kestrels.gif">
+                            <collision-poly>
+                                <point x="0.0270621" y="0.0135135" />
+                                <point x="0.517516" y="0.0305833" />
+                                <point x="0.961261" y="0.0305833" />
+                                <point x="0.902873" y="0.431722" />
+                                <point x="0.949583" y="0.977952" />
+                                <point x="0.517516" y="0.977952" />
+                                <point x="0.0153846" y="0.977952" />
+                                <point x="0.0854495" y="0.431722" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Textos">
+            <object-type name="Vida" sid="641468193000762">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
+        <layout>Main.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-folder name="Principal">
+            <event-sheet>Main.xml</event-sheet>
+        </event-folder>
+        <event-folder name="Sistemas">
+            <event-sheet>Eventos Upgrades.xml</event-sheet>
+            <event-sheet>Eventos Inimigos.xml</event-sheet>
+            <event-sheet>Eventos Minigames.xml</event-sheet>
+            <event-sheet>Eventos HUD.xml</event-sheet>
+        </event-folder>
     </event-folder>
     <global-instances />
     <sounds-folder />

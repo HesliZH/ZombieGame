@@ -10,8 +10,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Layout 1</layout>
-        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <layout order="1">Main</layout>
+        <event-sheet active="1" order="0">Main</event-sheet>
+        <event-sheet order="2">Eventos HUD</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -22,14 +23,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
+        <folder expanded="0" path="object-folder/Sprites/" />
+        <folder expanded="1" path="object-folder/Textos/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="event-folder/Principal/" />
+        <folder expanded="1" path="event-folder/Sistemas/" />
         <folder expanded="1" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Torre/" />
-        <folder expanded="1" path="animation-folder/Terra/" />
         <folder expanded="1" path="animation-folder/Esqueleto/" />
+        <folder expanded="1" path="animation-folder/Terra/" />
+        <folder expanded="1" path="animation-folder/Torre/" />
     </folders-expanded>
 </c2uistate>

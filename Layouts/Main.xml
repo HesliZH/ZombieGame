@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Main</name>
     <sid>567190206935016</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Main</event-sheet>
     <size>
         <width>800</width>
         <height>600</height>
@@ -85,14 +85,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>703</x>
-                        <y>302</y>
+                        <x>700.015380859</x>
+                        <y>333.51348877</y>
                         <z>0</z>
-                        <width>210</width>
-                        <height>308</height>
+                        <width>242</width>
+                        <height>292</height>
                         <depth>0</depth>
-                        <hotspotX>0.518072307</hotspotX>
-                        <hotspotY>0.429824561</hotspotY>
+                        <hotspotX>0.523076952</hotspotX>
+                        <hotspotY>0.432432443</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -177,6 +177,33 @@
                         <depth>0</depth>
                         <hotspotX>0.550000012</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Vida" uid="4">
+                    <properties>
+                        <text></text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>584</x>
+                        <y>33</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

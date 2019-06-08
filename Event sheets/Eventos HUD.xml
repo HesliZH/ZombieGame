@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos HUD</name>
+    <events>
+        <event-group description="Controles do HUD (Implementado em outra event sheet)" sid="528322094823531" title="HUD">
+            <sub-events>
+                <event-block sid="804105271485768">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="659239586308648" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="948655169962937" type="Vida">
+                            <param id="0" name="Text">Vida_base</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
