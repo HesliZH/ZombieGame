@@ -2,5 +2,275 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Eventos Inimigos</name>
-    <events />
+    <events>
+        <variable constant="0" name="Controle_Waves" sid="924240842272940" static="0" type="number">0</variable>
+        <variable constant="0" name="Quantidade_inimigos" sid="843320671840454" static="0" type="number">0</variable>
+        <event-group description="Responsável pela definição da wave de ataque ao jogador" sid="773027314170521" title="DefinirWave">
+            <sub-events>
+                <event-block sid="364146512096859">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="335814352793049" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">10</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="573873284484367" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="691524172683029">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="941857597234631" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="101470797497793" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244122324838620">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="677315812392500" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="111012655428370" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">4</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="904295636560275">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="269229060532257" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="685543393553839" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="936428434647708">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="983998562032312" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">79</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="736889203707582" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="940987576858016">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="656669544880301" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">95</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="329505221597848" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Value">7</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Controle de spawn dos inimigos" sid="224516174485289" title="SpawnaInimigos">
+            <sub-events>
+                <event-block sid="934546840329282">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="456968591514559" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="411033308340981" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="282220061620370" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="640364991725332" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <comment>Precisamos definir daqui para baixo os outros inimigos a serem spawnados contra o jogador</comment>
+                <event-block sid="355063878773933">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="544409147455878" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="659067713915243" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="146275662028327" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="114059304075845" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="694894069813578">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="518473314388238" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="678047589646311" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="594567778676657" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="705355901023644" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="663833153792840">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="261288205087641" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="651014615868870" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="389617688445886" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="258123759958483" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="697843197103323">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="833058483105716" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="848443227803611" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="885145175666770" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="762248492574414" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="970227742833475">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="542244606245079" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="510189272683136" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="573662002554277" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="986871357880301" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="666406080848019">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="659850696430187" type="System">
+                            <param id="0" name="Interval (seconds)">3</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="933511665736315" type="System">
+                            <param id="0" name="Variable">Controle_Waves</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="544361957773425" type="System">
+                            <param id="0" name="Object to create">Esqueleto</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">-210</param>
+                            <param id="3" name="Y">432</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="607869555596080" type="System">
+                            <param id="0" name="Variable">Quantidade_inimigos</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
 </c2eventsheet>

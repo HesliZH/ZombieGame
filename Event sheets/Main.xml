@@ -3,11 +3,12 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Main</name>
     <events>
+        <comment>Incluindo eventos dos inimigos em código separado para reaproveitamento</comment>
+        <include>Eventos Inimigos</include>
         <comment>Eventos do HUD Funcionam com um código Separado</comment>
         <include>Eventos HUD</include>
         <variable constant="0" name="Atacando" sid="362357001558676" static="0" type="number">0</variable>
         <variable constant="0" name="Vida_base" sid="542476904269436" static="0" type="number">0</variable>
-        <variable constant="0" name="Quantidade_inimigos" sid="921865849171583" static="0" type="number">0</variable>
         <variable constant="0" name="Posicao" sid="752979626380164" static="0" type="number">0</variable>
         <event-block sid="462850361125983">
             <conditions>
@@ -37,21 +38,6 @@
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="582296034141110" type="Esqueleto">
                     <param id="0" name="Control">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="374409420381744">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="469423520825684" type="System">
-                    <param id="0" name="Variable">Quantidade_inimigos</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">10</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Set group active" sid="358872784646057" type="System">
-                    <param id="0" name="Group name">&quot;SpawnaInimigos&quot;</param>
-                    <param id="1" name="State">0</param>
                 </action>
             </actions>
         </event-block>
@@ -102,29 +88,6 @@
                     <actions>
                         <action id="-1" name="Set X" sid="598162393633104" type="Esqueleto">
                             <param id="0" name="X">Posicao-10</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-group description="Controle de spawn dos esqueletos" sid="607474035569065" title="SpawnaInimigos">
-            <sub-events>
-                <event-block sid="407342715514931">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="221777356248351" type="System">
-                            <param id="0" name="Interval (seconds)">3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Create object" sid="543321647956033" type="System">
-                            <param id="0" name="Object to create">Esqueleto</param>
-                            <param id="1" name="Layer">2</param>
-                            <param id="2" name="X">-210</param>
-                            <param id="3" name="Y">432</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="631859689723654" type="System">
-                            <param id="0" name="Variable">Quantidade_inimigos</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
