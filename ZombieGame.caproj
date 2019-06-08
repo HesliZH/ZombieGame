@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>ZombieGame</name>
+    <description></description>
+    <version>1.0</version>
+    <author>HitKill Software</author>
+    <author-email>zh.dubeslando@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.hitkill.zombie</app-id>
+    <unique-id>1kk753qnyz353</unique-id>
+    <saved-with-version>26500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>600</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="FUndo" sid="777996443045464">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Projetos\ZombieGame\Sprites\Fundo.png" />
+        </object-type>
+        <object-type name="Torre" sid="465091437293953">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="189314629254967">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842810360887344" speed="5">
+                    <frame duration="1" hotspotX="0.518072" hotspotY="0.429825" original-source="C:\Projetos\ZombieGame\Sprites\Torre.png">
+                        <collision-poly>
+                            <point x="0.0120482" y="0" />
+                            <point x="0.518072" y="0.0175439" />
+                            <point x="0.975904" y="0.0175439" />
+                            <point x="0.915663" y="0.429825" />
+                            <point x="0.963855" y="0.991228" />
+                            <point x="0.518072" y="0.991228" />
+                            <point x="0" y="0.991228" />
+                            <point x="0.0722892" y="0.429825" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Terra" sid="115774320416265">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="822858721533440" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Terra2" sid="747925245282681">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="190318079018520">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Projetos\ZombieGame\Sprites\Terra.png" />
+        </object-type>
+        <object-type name="Esqueleto" sid="565671615770220">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="955527194914669">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="13" loop="1" name="Andando" pingpong="0" repeatcount="1" repeatto="0" sid="894385687703644" speed="5">
+                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.55" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.545455" hotspotY="0.514286" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.514286" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.514286" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" />
+                </animation>
+                <animation framecount="18" loop="1" name="Atacando" pingpong="0" repeatcount="1" repeatto="0" sid="878473145250988" speed="5">
+                    <frame duration="1" hotspotX="0.833333" hotspotY="0.441176" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.513514" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances />
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Quantidade_inimigos" sid="921865849171583" static="0" type="number">0</variable>
+        <variable constant="0" name="Posicao" sid="752979626380164" static="0" type="number">0</variable>
+        <event-block sid="356760178216176">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="170038770012547" type="Esqueleto" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="459400190918431" type="Esqueleto">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="738886092868884">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="220543599000870" type="Esqueleto" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="582296034141110" type="Esqueleto">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="407342715514931">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="221777356248351" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="543321647956033" type="System">
+                    <param id="0" name="Object to create">Esqueleto</param>
+                    <param id="1" name="Layer">2</param>
+                    <param id="2" name="X">-210</param>
+                    <param id="3" name="Y">432</param>
+                </action>
+                <action id="-10" name="Add to" sid="631859689723654" type="System">
+                    <param id="0" name="Variable">Quantidade_inimigos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="374409420381744">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="469423520825684" type="System">
+                    <param id="0" name="Variable">Quantidade_inimigos</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">10</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="935113329266178" title="Animações">
+            <sub-events>
+                <event-block sid="416486249603115">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="653935548419990" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="479266752752768" type="Esqueleto">
+                            <param id="0" name="Animation">&quot;Andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="941168448967835">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="743289965981618" type="Esqueleto">
+                            <param id="0" name="Object">Torre</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="789858911726503" type="Esqueleto">
+                            <param id="0" name="Animation">&quot;Atacando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="851690042230700" type="System">
+                            <param id="0" name="Variable">Posicao</param>
+                            <param id="1" name="Value">Esqueleto.X</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="974135264398706">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="720964615196807" type="Esqueleto">
+                            <param id="0" name="Object">Esqueleto</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="598162393633104" type="Esqueleto">
+                            <param id="0" name="X">Posicao-10</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
