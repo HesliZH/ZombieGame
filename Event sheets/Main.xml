@@ -95,6 +95,63 @@
         </event-group>
         <event-group description="Controle de vida da base" sid="289456058866720" title="Danos_estrutura">
             <sub-events>
+                <comment>Provoca os danos ao sprite da torre</comment>
+                <event-block sid="723405944521731">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="685211635465541" type="System">
+                            <param id="0" name="Variable">Vida_base</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">70</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="742002622202999" type="Torre">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="280341312671754">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="241575858976597" type="System">
+                            <param id="0" name="Variable">Vida_base</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">50</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="957726213623847" type="Torre">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="534897184906357">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="286821263136813" type="System">
+                            <param id="0" name="Variable">Vida_base</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">25</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="564971962592659" type="Torre">
+                            <param id="0" name="Frame number">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="597673741841766">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="283396280509627" type="System">
+                            <param id="0" name="Variable">Vida_base</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="807200365341569" type="Torre">
+                            <param id="0" name="Frame number">4</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="146122291857778">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="118599193300563" type="System">
@@ -108,7 +165,7 @@
                         <event-block sid="419873050368075">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="652797726425548" type="System">
-                                    <param id="0" name="Interval (seconds)">15</param>
+                                    <param id="0" name="Interval (seconds)">5</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -119,6 +176,43 @@
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="Caso acabe a vida da base o que vai acontecer" sid="408565228398115" title="Control_Vida">
+            <sub-events>
+                <event-block sid="169995837606494">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="754799795177723" type="System">
+                            <param id="0" name="Variable">Vida_base</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="483824091425137" type="System">
+                            <param id="0" name="Group name">&quot;SpawnaInimigos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="578394113665549" type="System">
+                            <param id="0" name="Layer">&quot;Morte&quot;</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="799738774259840">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="271645776001015" type="Esqueleto">
+                            <param id="0" name="Object">Torre</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="807923491944975" type="Torre">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="596375946734167" type="Esqueleto" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

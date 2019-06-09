@@ -25,7 +25,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
         <folder expanded="0" path="object-folder/Sprites/" />
-        <folder expanded="1" path="object-folder/Textos/" />
+        <folder expanded="0" path="object-folder/Textos/" />
+        <folder expanded="1" path="object-folder/Componentes do HUD/" />
         <folder expanded="1" path="layout-folder/" />
         <folder expanded="1" path="event-folder/" />
         <folder expanded="1" path="event-folder/Principal/" />
@@ -37,5 +38,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Esqueleto/" />
         <folder expanded="1" path="animation-folder/Terra/" />
         <folder expanded="1" path="animation-folder/Torre/" />
+        <folder expanded="1" path="animation-folder/HUDForca/" />
+        <folder expanded="1" path="animation-folder/TelaMorte/" />
+        <folder expanded="1" path="animation-folder/btnrecomecar/" />
+        <folder expanded="1" path="animation-folder/btnvoltar/" />
+        <folder expanded="1" path="animation-folder/VoceMorreu/" />
     </folders-expanded>
 </c2uistate>

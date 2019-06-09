@@ -93,7 +93,7 @@
             </object-type>
             <object-type name="FUndo" sid="777996443045464">
                 <plugin id="TiledBg" />
-                <texture original-source="C:\Projetos\ZombieGame\Sprites\Fundo.png" />
+                <texture original-source="C:\Projetos\ZombieGame\Sprites\Zombie\Ground.png" />
             </object-type>
             <object-type name="Terra" sid="115774320416265">
                 <plugin id="Sprite" />
@@ -120,19 +120,12 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder>
-                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842810360887344" speed="5">
-                        <frame duration="1" hotspotX="0.523077" hotspotY="0.432432" original-source="C:\Projetos\ZombieGame\Sprites\the castle of kestrels.gif">
-                            <collision-poly>
-                                <point x="0.0270621" y="0.0135135" />
-                                <point x="0.517516" y="0.0305833" />
-                                <point x="0.961261" y="0.0305833" />
-                                <point x="0.902873" y="0.431722" />
-                                <point x="0.949583" y="0.977952" />
-                                <point x="0.517516" y="0.977952" />
-                                <point x="0.0153846" y="0.977952" />
-                                <point x="0.0854495" y="0.431722" />
-                            </collision-poly>
-                        </frame>
+                    <animation framecount="5" loop="0" name="Padrao" pingpong="0" repeatcount="1" repeatto="0" sid="842810360887344" speed="0">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\tower-drawing\Tower.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.502857" original-source="C:\Projetos\ZombieGame\Sprites\tower-drawing\Tower_damage1.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Projetos\ZombieGame\Sprites\tower-drawing\Tower_damage2.png" />
+                        <frame duration="1" hotspotX="0.503226" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\tower-drawing\Tower_damage3.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\tower-drawing\Tower_damage4.png" />
                     </animation>
                 </animation-folder>
             </object-type>
@@ -140,6 +133,99 @@
         <object-folder name="Textos">
             <object-type name="Vida" sid="641468193000762">
                 <plugin id="Text" />
+            </object-type>
+            <object-type name="HUDForca" sid="270875483764472">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="232891816187260" speed="5">
+                        <frame duration="1" hotspotX="0.503906" hotspotY="0.5" original-source="C:\Projetos\ZombieGame\Sprites\HUD\forca.png">
+                            <collision-poly>
+                                <point x="0.0800781" y="0.185185" />
+                                <point x="0.9375" y="0.0925926" />
+                                <point x="0.990234" y="0.5" />
+                                <point x="0.919922" y="0.740741" />
+                                <point x="0.503906" y="0.87037" />
+                                <point x="0.0820313" y="0.796297" />
+                                <point x="0.00390625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Componentes do HUD">
+            <object-type name="TelaMorte" sid="908064623106729">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999801453131452" speed="5">
+                        <frame duration="1" hotspotX="0.497436" hotspotY="0.748092" original-source="C:\Projetos\ZombieGame\Sprites\HUD\Tela de morte.png">
+                            <collision-poly>
+                                <point x="0.0461538" y="0.0763359" />
+                                <point x="0.497436" y="0.00763359" />
+                                <point x="0.953846" y="0.0687023" />
+                                <point x="0.989744" y="0.748092" />
+                                <point x="0.661538" y="0.992366" />
+                                <point x="0.333333" y="0.992366" />
+                                <point x="0.00512821" y="0.748092" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnrecomecar" sid="479472231109684">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="487219073404724" speed="5">
+                        <frame duration="1" hotspotX="0.467797" hotspotY="0.551282" original-source="C:\Projetos\ZombieGame\Sprites\HUD\BTNRecomecar.png">
+                            <collision-poly>
+                                <point x="0.0932204" y="0.282051" />
+                                <point x="0.467797" y="0.24359" />
+                                <point x="0.877966" y="0.0128205" />
+                                <point x="0.99661" y="0.551282" />
+                                <point x="0.825424" y="0.692307" />
+                                <point x="0.467797" y="0.846154" />
+                                <point x="0.0932204" y="0.820513" />
+                                <point x="0.00338984" y="0.551282" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnvoltar" sid="255112693636634">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="769143619376897" speed="5">
+                        <frame duration="1" hotspotX="0.500745" hotspotY="0.222222" original-source="C:\Projetos\ZombieGame\Sprites\HUD\btnvoltar.png">
+                            <collision-poly>
+                                <point x="0.233979" y="0.555556" />
+                                <point x="0.500745" y="0.206349" />
+                                <point x="0.80775" y="0.126984" />
+                                <point x="0.997019" y="0.222222" />
+                                <point x="0.861401" y="0.888889" />
+                                <point x="0.14307" y="0.857143" />
+                                <point x="0.00596125" y="0.222222" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="VoceMorreu" sid="766418886556089">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="328035884604133" speed="5">
+                        <frame duration="1" hotspotX="0.492857" hotspotY="0.393443" original-source="C:\Projetos\ZombieGame\Sprites\HUD\hudmorreu.png">
+                            <collision-poly>
+                                <point x="0.116071" y="0.213115" />
+                                <point x="0.882143" y="0.0983607" />
+                                <point x="0.994643" y="0.393443" />
+                                <point x="0.910714" y="0.950819" />
+                                <point x="0.492857" y="0.934426" />
+                                <point x="0.105357" y="0.672131" />
+                                <point x="0.0142857" y="0.393443" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
             </object-type>
         </object-folder>
     </object-folder>
